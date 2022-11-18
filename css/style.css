@@ -1,0 +1,140 @@
+/* GENERAL STYLE  */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+}
+.container {
+  margin: 0px auto;
+  width: 960px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 13px;
+  line-height: 1.3em;
+}
+
+* {
+  text-decoration: none; /* подчеркивание */
+}
+
+ul li {
+  list-style-type: none; /* метка */
+}
+/* HEADER */
+.header {
+  padding: 50px 0px;
+  background-color: yellowgreen;
+}
+.header h1,
+.header h2 {
+  text-align: center;
+  color: greenyellow;
+}
+/* NAVIGATION */
+.page-navigation {
+  background-color: black;
+  border-color: grey;
+  min-height: 64px;
+}
+
+.page-navigation li {
+  float: left;
+  width: 100px;
+}
+.page-navigation a {
+  display: block;
+  color: #9d9d9d;
+  line-height: 4em;
+  font-weight: bold;
+  text-align: center;
+}
+.page-navigation a:hover {
+  color: yellowgreen;
+  background-color: black;
+}
+/* FORM */
+.login {
+  padding: 15px 0px;
+  float: right;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  padding: 5px;
+  margin-right: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none; /*обводка*/
+}
+.login input[type="submit"] {
+  padding: 5px 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+.login input[type="submit"]:hover,
+button:hover {
+  background-color: darkgray;
+  color: white;
+}
+/* MAIN PART */
+.collections {
+  overflow: auto;
+}
+.collections > div:first-child {
+  padding-left: 0;
+  padding-right: 5px;
+}
+.collections > div:last-child {
+  padding-right: 0;
+  padding-left: 5px;
+}
+.collection-title {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #777;
+  font-size: 36px;
+}
+.collection-item-outer {
+  display: inline-block;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: calc(100% / 3);
+  box-sizing: border-box;
+}
+.collection-item {
+  border: 1px solid #959595;
+}
+.collection-item img,
+.collection-item video {
+  width: 100%;
+}
+.collection-text {
+  padding: 0 20px 20px 20px;
+}
+
+.collection-text h3 {
+  color: yellowgreen;
+  overflow: hidden;
+  white-space: nowrap; /*запрет на пробелы*/
+  text-overflow: ellipsis;
+}
+.collection-text p {
+  height: 80px;
+  overflow: hidden;
+}
+.collection-text button {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+}
+/* FOOTER */
+.footer {
+  background-color: yellowgreen;
+  color: white;
+  margin: 30px auto;
+  padding: 20px 0;
+}
